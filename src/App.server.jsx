@@ -31,6 +31,6 @@ function App({routes}) {
 
 const routes = import.meta.globEager('./routes/**/*.server.[jt](s|sx)');
 
-setLoggerOptions({showCacheApiStatus: true, showCacheControlHeader});
+setLoggerOptions({showCacheApiStatus: true, showCacheControlHeader: true});
 
 export default renderHydrogen(App, {shopifyConfig, routes});
